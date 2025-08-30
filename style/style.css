@@ -1,0 +1,488 @@
+.wrapper{
+    width: 100vw;
+    height: 100%;
+    background-color: #daaa00;
+}
+header{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+}
+nav{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    background-color: #cfb991;
+
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #cfb991;
+    display: inline;
+
+}
+
+
+nav li{
+    float: left;
+    
+}
+nav img{
+    height: 55px;
+    width: 55px;
+    position: relative;
+    left: 5px;
+    border-radius: 30px;
+    top: 10px;
+  
+}
+
+nav li a{
+    position: relative;
+    display: inline;
+    text-decoration: none;
+    color: #ebd99f;
+    margin: 0px 15px;
+    top: 22px;
+    left: 10px;
+    font-size: 25px;
+}
+
+nav li a:hover{
+    background-color: black;
+    padding: 75px 20px;
+}
+
+   
+article{
+    width: 100%;
+    height: 90vh;
+    background-color: #ebd99f;
+}
+
+.carousel{
+    height: 89vh;
+    width: 40%;
+    border: 3px solid #daaa00;
+    position: absolute;
+    left: 200px;
+    top: 170px;
+    overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%; /* 3 slides */
+}
+
+.slide{
+     height: 80vh;
+        width: 60%;
+        position: relative;
+        left: 70px;
+}
+
+
+   .slide img {
+    width: 90%;
+    position: relative;
+    top: 10px;       
+    height: 80vh;      /* maintains aspect ratio */
+    display: block;
+    left: -30px;
+}
+
+  
+
+.caption{
+            position: absolute;
+            bottom: 40px;
+            left: 40%;
+            transform: translateX(-50%);
+            font-size: x-large;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+.prev, .next {
+      position: absolute;
+      top: 47%;
+      transform: translateY(-50%);
+      color: white;
+      border: none;
+      background: none;
+      padding: 10px 50px;
+      cursor: pointer;
+      font-size: 35px;
+
+    }
+
+   
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    
+    
+
+
+
+aside{
+   width: 43%;
+   height: 89vh;
+   position: absolute;
+   top: 165px;
+   right: 0px;
+   background-color:#ddb945;
+   border: 5px solid #daaa00;
+}
+
+aside p{
+    font-size: x-large;
+    overflow-wrap:break-word;
+
+}
+
+/* Desktop - 992px to 1199px */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .carousel {
+        left: 100px;
+        width: 42%;
+    }
+    
+    aside {
+        width: 45%;
+        right: 20px;
+    }
+    
+    nav li a {
+        font-size: 22px;
+        margin: 0px 12px;
+    }
+}
+
+/* Tablet - 768px to 991px */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .wrapper {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    article {
+        height: auto;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .carousel {
+        position: relative;
+        left: 0;
+        top: 20px;
+        width: 80%;
+        height: 60vh;
+        margin: 0 auto 30px;
+    }
+    
+    .slide {
+        height: 60vh;
+        width: 33.333%;
+        left: 0;
+    }
+    
+    .slide img {
+        height: 50vh;
+        width: 90%;
+    }
+    
+    aside {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    nav li a {
+        font-size: 20px;
+        margin: 0px 10px;
+    }
+    
+    nav li a:hover {
+        padding: 10px 15px;
+    }
+    
+    aside p {
+        font-size: large;
+        padding: 15px;
+    }
+    
+    .caption {
+        font-size: large;
+        padding: 8px 15px;
+        left: 50%;
+    }
+}
+
+/* Mobile Large - 481px to 767px */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+    header h1 {
+        font-size: x-large;
+        padding: 15px;
+    }
+    
+    nav {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+    
+    nav img {
+        position: static;
+        margin-bottom: 15px;
+    }
+    
+    nav ul {
+        width: 100%;
+        text-align: center;
+        background-color: transparent;
+    }
+    
+    nav li {
+        float: none;
+        display: inline-block;
+        margin: 5px;
+    }
+    
+    nav li a {
+        position: static;
+        font-size: 18px;
+        margin: 0 8px;
+        top: 0;
+        left: 0;
+    }
+    
+    nav li a:hover {
+        padding: 8px 12px;
+    }
+    
+    article {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    
+    .carousel {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 95%;
+        height: 50vh;
+        margin: 20px auto;
+    }
+    
+    .slide {
+        height: 50vh;
+        width: 33.333%;
+        left: 0;
+    }
+    
+    .slide img {
+        height: 40vh;
+        width: 90%;
+    }
+    
+    aside {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 95%;
+        height: auto;
+        margin: 20px auto 0;
+    }
+    
+    aside p {
+        font-size: large;
+        padding: 15px;
+    }
+    
+    .caption {
+        font-size: medium;
+        padding: 8px 12px;
+        bottom: 20px;
+        left: 50%;
+    }
+    
+    .prev, .next {
+        padding: 10px 15px;
+        font-size: 25px;
+    }
+}
+
+/* Mobile Small - 320px to 480px */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: large;
+        padding: 10px;
+    }
+    
+    nav {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    nav img {
+        height: 45px;
+        width: 45px;
+        position: static;
+        margin-bottom: 10px;
+    }
+    
+    nav ul {
+        width: 100%;
+        text-align: center;
+        background-color: transparent;
+    }
+    
+    nav li {
+        float: none;
+        display: inline-block;
+        margin: 3px;
+    }
+    
+    nav li a {
+        position: static;
+        font-size: 16px;
+        margin: 0 5px;
+        top: 0;
+        left: 0;
+    }
+    
+    nav li a:hover {
+        padding: 6px 10px;
+    }
+    
+    article {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 5px;
+    }
+    
+    .carousel {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 98%;
+        height: 40vh;
+        margin: 15px auto;
+    }
+    
+    .slide {
+        height: 40vh;
+        width: 33.333%;
+        left: 0;
+    }
+    
+    .slide img {
+        height: 30vh;
+        width: 95%;
+    }
+    
+    aside {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 98%;
+        height: auto;
+        margin: 15px auto 0;
+        border: 3px solid #daaa00;
+    }
+    
+    aside p {
+        font-size: medium;
+        padding: 12px;
+        line-height: 1.5;
+    }
+    
+    .caption {
+        font-size: small;
+        padding: 6px 10px;
+        bottom: 15px;
+        left: 50%;
+    }
+    
+    .prev, .next {
+        padding: 8px 12px;
+        font-size: 20px;
+    }
+    
+    .prev { left: 5px; }
+    .next { right: 5px; }
+}
+
+/* Extra Small Mobile - below 320px */
+@media screen and (max-width: 319px) {
+    header h1 {
+        font-size: medium;
+        padding: 8px;
+    }
+    
+    nav li a {
+        font-size: 14px;
+        margin: 0 3px;
+    }
+    
+    .carousel {
+        height: 35vh;
+        width: 100%;
+        margin: 10px auto;
+        border: 2px solid #daaa00;
+    }
+    
+    .slide {
+        height: 35vh;
+    }
+    
+    .slide img {
+        height: 25vh;
+    }
+    
+    aside {
+        border: 2px solid #daaa00;
+        margin: 10px auto 0;
+    }
+    
+    aside p {
+        font-size: small;
+        padding: 10px;
+    }
+    
+    .caption {
+        font-size: x-small;
+        padding: 4px 8px;
+        bottom: 10px;
+    }
+    
+    .prev, .next {
+        padding: 6px 10px;
+        font-size: 18px;
+    }
+}
