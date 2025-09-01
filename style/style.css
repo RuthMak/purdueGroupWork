@@ -485,4 +485,102 @@ aside p{
         padding: 6px 10px;
         font-size: 18px;
     }
+
 }
+
+
+/* request page */
+.tooltips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .tooltip {
+    position: relative;
+    background: #fff;
+    border: 1px solid #daaa00;
+    border-radius: 12px;
+    padding: 0.75rem;
+    width: 220px;
+    text-align: center;
+  }
+  
+  .tooltip img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .tooltip figcaption {
+    margin-top: .5rem;
+    font-weight: 600;
+  }
+  
+  .tooltiptext {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 110%;
+    background: #000;
+    color: #CFB991;
+    padding: .5rem .75rem;
+    border-radius: 8px;
+    white-space: normal;
+    max-width: 260px;
+    box-shadow: 0 6px 16px #000;
+  }
+  
+  .tooltip:hover .tooltiptext,
+  .tooltip:focus-within .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .form-section {
+    background: #fff;
+    border: 1px solid #daaa00;
+    border-radius: 12px;
+    padding: 1rem;
+    max-width: 560px;
+    margin: 1.5rem auto;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+  }
+  
+  label {
+    font-weight: 600;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    font: inherit;
+    padding: .6rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+  }
+  
+  button {
+    background: #000;;
+    color: #CFB991;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  button:hover,
+  button:focus {
+    background: #CFB991;
+    color: #000;
+  }
+  
