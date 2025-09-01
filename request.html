@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purdue Site - Request Info</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <img src="images/purdue logo.jpg" alt="">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="request.html" class="active">Request</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Request Information</h1>
+    <p>Hover over the handbooks to learn more:</p>
+
+    <!-- Tooltips -->
+    <section class="tooltips">
+      <div class="tooltip">
+        <img src="images/career.jpg" alt="Career Opportunities">
+        <span class="tooltiptext">Career Opportunities Handbook</span>
+      </div>
+      <div class="tooltip">
+        <img src="images/parent.jpg" alt="Parent Info">
+        <span class="tooltiptext">Parent & Family Information</span>
+      </div>
+      <div class="tooltip">
+        <img src="images/success.jpg" alt="Career Success">
+        <span class="tooltiptext">Career Success Resources</span>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="form-section">
+      <h2>Request More Info</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="program">Program of Interest:</label>
+        <select id="program" name="program">
+          <option>Computer Science</option>
+          <option>Engineering</option>
+          <option>Cybersecurity</option>
+          <option>Business</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Request</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
