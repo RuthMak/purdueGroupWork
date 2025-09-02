@@ -596,24 +596,24 @@ aside p{
   
 
 
-nav a.active {
-  border-bottom: 4px solid #000;
-  padding-bottom: 6px;
+
+.carousel .slides {
+  display: flex;                 
+  width: 300%;                   
+  transform: translateX(0%);     
+  transition: transform 0.5s ease-in-out;
 }
 
-
-@media (hover:hover) {
-  nav li a:hover {
-    background-color: #000;
-    color: #CFB991;         
-    padding: 10px 20px;     
-    border-radius: 6px;
-  }
+.carousel .slide {
+  width: 100%;                   
+  left: 0;                       
+  height: 80vh;                 
 }
-
 
 .carousel .slide img {
-  object-fit: cover;         
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             
   border-radius: 8px;
 }
 
@@ -622,42 +622,32 @@ nav a.active {
   text-shadow: 0 2px 6px rgba(0,0,0,.5);
   background: rgba(0,0,0,.25);
   border-radius: 8px;
-  padding: 10px 14px;       
+  padding: 10px 14px;
 }
 
 
-aside p {
-  line-height: 1.5;
-  padding: 12px 16px;
+nav a.active {
+  border-bottom: 4px solid #000;
+  padding-bottom: 6px;
+}
+
+@media (hover:hover) {
+  nav li a:hover {
+    background-color: #000;
+    color: #CFB991;      
+    padding: 10px 20px;  
+    border-radius: 6px;
+  }
 }
 
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .carousel { height: 60vh; }
-  .carousel .slide { height: 60vh; }
+  .carousel .slide,
   .carousel .slide img { height: 60vh; }
 }
-
 @media screen and (max-width: 767px) {
   .carousel { height: 50vh; }
-  .carousel .slide { height: 50vh; }
+  .carousel .slide,
   .carousel .slide img { height: 50vh; }
 }
-
-
-.carousel .slide {
-  width: 100%;
-  left: 0;
-}
-
-.carousel .slides {
-  transform: translateX(0%);
-}
-
-nav li a:hover {
-  background-color: #000;
-  color: #CFB991;
-  padding: 10px 20px;  
-  border-radius: 6px;
-}
-
