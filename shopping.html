@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Purdue Site – Shop</title>
+
+  
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+  
+  <div class="wrapper">
+
+    
+    <header>
+      <h1>Shop Old Gold &amp; Black</h1>
+    </header>
+
+   
+    <nav>
+     
+      <img src="images/purdue logo.jpg" alt="Purdue Pete logo" />
+      <ul>
+        <li>
+          
+          <a href="index.html">Home</a>
+          <a href="shop.html" class="active">Shop</a>
+          <a href="request.html">Request</a>
+        </li>
+      </ul>
+    </nav>
+
+    
+    <article>
+     
+      <div class="carousel">
+      
+        <div class="slides">
+          
+          <div class="slide">
+            
+            <img src="images/shop-store.jpg" alt="Purdue campus store with apparel and spirit wear" />
+            <div class="caption">Campus Store — Apparel &amp; Spirit Wear</div>
+          </div>
+
+          
+          <div class="slide">
+            <img src="images/shop-vintage.jpg" alt="Vintage Purdue banner and retro designs" />
+            <div class="caption">Vintage Purdue — Retro Vibes</div>
+          </div>
+
+          
+          <div class="slide">
+            <img src="images/shop-gear.jpg" alt="Assorted Purdue fan gear for tailgates and home" />
+            <div class="caption">Fan Gear — Tailgate &amp; Home Items</div>
+          </div>
+        </div>
+
+        
+        <button class="prev" onclick="moveSlide(-1)">❮</button>
+        <button class="next" onclick="moveSlide(1)">❯</button>
+      </div>
+    </article>
+
+   
+    <aside>
+      <p><strong>Show your Purdue spirit!</strong> Pick up Old Gold &amp; Black gear for class, game day, and home.</p>
+      <p><em>Collections:</em> Campus Store staples, Vintage Purdue, and Fan Gear for tailgates.</p>
+      <p>Tip: Click the arrows to see more highlights.</p>
+    </aside>
+  </div>
+
+  
+  <script src="js/site.js"></script>
+</body>
+</html>
