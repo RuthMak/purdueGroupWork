@@ -95,7 +95,7 @@ article{
     top: 10px;       
     height: 80vh;      /* maintains aspect ratio */
     display: block;
-    left: -30px;
+    left: 0px;
 }
 
   
@@ -103,7 +103,7 @@ article{
 .caption{
             position: absolute;
             bottom: 40px;
-            left: 40%;
+            left: 50%;
             transform: translateX(-50%);
             font-size: x-large;
             color: white;
@@ -657,3 +657,4 @@ nav a.active {
   border-bottom: 4px solid #000;
   padding-bottom: 6px;
 }
+
