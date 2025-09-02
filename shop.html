@@ -1,82 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Purdue Site – Shop</title>
-
-  
-  <link rel="stylesheet" href="./style/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purdue Site - Shop</title>
+    
+    <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
-  <div class="wrapper">
-    
-    <header>
-      <h1>Shop Old Gold &amp; Black</h1>
-    </header>
+    <div class="wrapper">
+       <header>
+        <h1>Shop Old Gold &amp; Black</h1>
+       </header>
 
-    
-    <nav>
-      <img src="images/purdue logo.jpg" alt="Purdue Pete logo" />
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-          <a href="shop.html" class="active">Shop</a>
-          <a href="request.html">Request</a>
-        </li>
-      </ul>
-    </nav>
+       
+       <nav>
+        <img src="images/purdue logo.jpg" alt="">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="request.html">Request</a>
+            </li>
+        </ul>
+       </nav>
 
-    
-    <article>
-      <div class="carousel">
-        <div class="slides">
-          
-          <div class="slide">
-            <img src="purdueshop1.jpg" alt="Campus store apparel and spirit wear">
-            <div class="caption">Campus Store — Apparel &amp; Spirit Wear</div>
-          </div>
+      
+       <article>
+        <div class="carousel">
+            <div class="slides">
+                
+                <div class="slide">
+                    <img src="purdueshop1.jpg" alt="">
+                    <div class="caption">Campus Store — Apparel &amp; Spirit Wear</div>
+                </div>
 
-          <div class="slide">
-            <img src="purdueshop2.jpg" alt="Vintage Purdue banner and retro designs">
-            <div class="caption">Vintage Purdue — Retro Vibes</div>
-          </div>
+                <div class="slide">
+                    <img src="purdueshop2.jpg" alt="">
+                    <div class="caption">Vintage Purdue — Retro Vibes</div>
+                </div>
 
-          <div class="slide">
-            <img src="purdueshop3.jpg" alt="Assorted Purdue fan gear for tailgates and home">
-            <div class="caption">Fan Gear — Tailgate &amp; Home Items</div>
-          </div>
+                <div class="slide">
+                    <img src="purdueshop3.jpg" alt="">
+                    <div class="caption">Fan Gear — Tailgate &amp; Home Items</div>
+                </div>
+            </div>
+
+            
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
         </div>
+       </article>
 
-        
-        <button class="prev" aria-label="Previous" onclick="moveSlide(-1)">❮</button>
-        <button class="next" aria-label="Next" onclick="moveSlide(1)">❯</button>
-      </div>
-    </article>
+       
+       <aside>
+        <p><strong>Show your Purdue spirit!</strong> Pick up Old Gold &amp; Black gear for class, game day, and home.</p>
+        <p><em>Collections:</em> Campus Store staples, Vintage Purdue, and Fan Gear for tailgates.</p>
+        <p>Tip: Use the arrows to explore the highlights.</p>
+       </aside>
+    </div>
 
-    <aside>
-      <p><strong>Show your Purdue spirit!</strong> Grab Old Gold &amp; Black gear for class, game day, and home.</p>
-      <p><em>Collections:</em> Campus Store staples, Vintage Purdue, and Fan Gear for tailgates.</p>
-      <p>Tip: Use the arrows to explore highlights.</p>
-    </aside>
-  </div>
-
-  
-  <script>
-    let current = 0;
-    function moveSlide(step) {
-      const track  = document.querySelector('.carousel .slides');
-      const slides = document.querySelectorAll('.carousel .slide');
-      const total  = slides.length;
-      if (!track || total === 0) return;
-      current = (current + step + total) % total;
-      track.style.transform = translateX(-${current * (100)}%);
-    }
     
-    window.addEventListener('DOMContentLoaded', () => {
-     
-      moveSlide(0);
-    });
-  </script>
+    <script src="js/site.js"></script>
 </body>
 </html>
