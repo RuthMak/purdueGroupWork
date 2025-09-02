@@ -651,3 +651,9 @@ nav a.active {
   .carousel .slide,
   .carousel .slide img { height: 50vh; }
 }
+
+
+nav a.active {
+  border-bottom: 4px solid #000;
+  padding-bottom: 6px;
+}
