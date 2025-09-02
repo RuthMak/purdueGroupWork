@@ -95,7 +95,7 @@ article{
     top: 10px;       
     height: 80vh;      /* maintains aspect ratio */
     display: block;
-    left: 0px;
+    left: 40px;
 }
 
   
@@ -658,6 +658,7 @@ nav a.active {
   border-bottom: 4px solid #000;
   padding-bottom: 6px;
 }
+
 
 
 
