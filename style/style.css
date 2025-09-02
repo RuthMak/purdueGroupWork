@@ -490,6 +490,16 @@ aside p{
 
 
 /* request page */
+.request-title {
+    background-color: #daaa00;
+    color: #000000;           
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
 .tooltips {
     display: flex;
     flex-wrap: wrap;
@@ -650,3 +660,4 @@ nav li a:hover {
   padding: 10px 20px;  
   border-radius: 6px;
 }
+
